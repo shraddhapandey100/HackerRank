@@ -6,7 +6,7 @@ Constraints : 0<= payment<= 10^9
 
 
 Output Format : On the first line, print US:u where u is payment formatted for US currency.
-On the second line, print India: i where is is payment formatted for India currency.
+On the second line, print India: i where i is is payment formatted for India currency.
 On the third line, print China: c where c is payment formatted for chinese currency.
 On the fourth line, print France: f , where f is payment formatted for French currency.
 
