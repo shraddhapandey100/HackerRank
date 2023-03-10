@@ -43,15 +43,21 @@ class Solution{
 		
 	}
     static boolean valid(String s){
+	    // Here we define the char stack
         Stack <Character> st = new Stack<>();
+	    // Iterate through a link
         for(int i=0; i<s.length(); i++){
+		// Put each character into the ch variable
            char ch = s.charAt(i);
+		// if ch coming open parenthesis the push into the stack
            if(ch == '(' || ch == '[' || ch == '{'){
                st.push(ch);
            } else if(st.isEmpty()){
+		   // If stack is empty then return false.
                return false;
            }else{
                char top = st.pop();
+		   
                if((top == '(' && ch!= ')') || (top == '[' && ch!=']') || (top == '{' && ch!='}')){
                    return false;
                }
